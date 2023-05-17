@@ -17,10 +17,8 @@ const App = () => {
   const [status, setStatus] = useState("");
   const [hasError, setHasError] = useState("");
 
-  sentDataFx.fail.watch(({ error }) => {
-    if (error.name !== "") {
-      alert("Что-то пошло не так, попробуйте еще раз");
-    }
+  sentDataFx.fail.watch(() => {
+    alert("Что-то пошло не так, попробуйте еще раз");
   });
 
   sentDataFx.done.watch(() => {

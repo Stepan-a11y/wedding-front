@@ -8,6 +8,6 @@ export type GuestParams = {
 
 export const postGuestData = (payload: GuestParams) => {
   axios
-    .post("http://localhost:3001/api/newguest", payload)
+    .post("https://wed-back.onrender.com/api/newguest", payload)
     .then((response) => response.data);
 };
