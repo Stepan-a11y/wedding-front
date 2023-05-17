@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill-opacity="0.2" width="730" height="200" viewBox="10 0 730 200">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 200px;
+        fill: #dbaf96;
+        font-family: Cormorant;
+        font-weight: 500;
+      }
+    </style>
+  </defs>
+  <text id="WISHES" class="cls-1" x="21" y="164">WISHES</text>
+</svg>

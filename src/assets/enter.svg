@@ -1,0 +1,9 @@
+<svg width="255" height="407" viewBox="0 0 255 407" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="3" y="3.89999" width="249" height="400" rx="17" stroke="#DBAF96" stroke-opacity="0.2" stroke-width="6"/>
+<line x1="218" y1="60" x2="218" y2="348" stroke="#DBAF96" stroke-opacity="0.2" stroke-width="6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M203 372.901C213.107 371.898 221 363.371 221 353V348H215V353C215 360.053 209.785 365.888 203 366.858V372.901Z" fill="#DBAF96" fill-opacity="0.2"/>
+<circle cx="195" cy="204" r="8" fill="#DBAF96" fill-opacity="0.2"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M27.0362 6.87L203.969 42.2095L205.144 36.3257L57.9668 6.92938L27.0362 6.87Z" fill="#DBAF96" fill-opacity="0.2"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M215 55.9012C215 49.1786 210.262 43.5626 203.942 42.211L205.121 36.3262C214.189 38.2255 221 46.268 221 55.9012V60H215V55.9012Z" fill="#DBAF96" fill-opacity="0.2"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M23.9605 400.9L203 366.854V372.962L56.0788 400.9H23.9605Z" fill="#DBAF96" fill-opacity="0.2"/>
+</svg>

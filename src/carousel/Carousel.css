@@ -1,0 +1,113 @@
+.slider {
+    position: relative;
+    width: 90%;
+    height: 400px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 200px;
+}
+ 
+.slider-img {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    transition: 0.5s;
+}
+ 
+.slider-img-prev {
+    transform: translateX(-100%);
+}
+ 
+.slider-img-next {
+    transform: translateX(100%);
+}
+
+.buttonsContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.skipBtn {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: rgba(219, 175, 150, 0.6);
+    transition: 0.4s;
+}
+
+.skipBtn:hover {
+    cursor: pointer;
+    background-color: #c49276;   
+}
+
+
+.slide {
+    height: 100%;
+    width: 90%;
+    background-color: brown;
+}
+
+@media (min-device-width: 0px) and (max-device-width: 568px) { 
+    .slider {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        box-sizing: border-box;
+        display: flex;
+        overflow: hidden;
+    }
+
+    .slider-img {
+        position: absolute;
+        width: 100%;
+        height: 500px;
+        transition: 0.5s;
+    }
+
+    .slide {
+        height: 100%;
+        width: 100%;
+    }
+
+    .buttonsContainer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+@media (min-device-width: 569px) and (max-device-width: 1140px) { 
+    .slider {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        box-sizing: border-box;
+        display: flex;
+        overflow: hidden;
+    }
+
+    .slider-img {
+        position: absolute;
+        width: 100%;
+        height: 500px;
+        transition: 0.5s;
+    }
+
+    .slide {
+        height: 100%;
+        width: 100%;
+    }
+
+    .buttonsContainer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-color:#f8f8f8;
+}
+
+@font-face { 
+  font-family: "Cormorant"; 
+  src: url("./fonts/Cormorant-Medium.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+  } 
