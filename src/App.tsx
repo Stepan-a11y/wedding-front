@@ -22,7 +22,7 @@ const App = () => {
   });
 
   sentDataFx.done.watch(() => {
-    setHasError("Ваши ответ успешно получен!");
+    setHasError("Ваш ответ успешно получен!");
   });
 
   useEffect(() => {

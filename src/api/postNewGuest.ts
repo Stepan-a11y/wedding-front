@@ -6,6 +6,11 @@ export type GuestParams = {
   status: string;
 };
 
+export const getGuestData = () =>
+  axios
+    .get("https://wed-back.onrender.com/api/getguests")
+    .then((response) => response.data);
+
 export const postGuestData = (payload: GuestParams) => {
   axios
     .post("https://wed-back.onrender.com/api/newguest", payload)
