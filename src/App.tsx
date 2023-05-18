@@ -9,35 +9,46 @@ import finalPicture from "./assets/finalPicture.png";
 import { useState, useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { sentDataFx } from "./model/newGuestModel";
+
+import Parse from "parse/dist/parse.min.js";
+
+// Your Parse initialization configuration goes here
+const PARSE_APPLICATION_ID = "6G2wRH07pIlzVynSdwdQHVI3LTmuJ8w2ZjIffCby";
+const PARSE_HOST_URL = "https://parseapi.back4app.com/";
+const PARSE_JAVASCRIPT_KEY = "Ak9NnXu8Gx8PzvogesU04tYmpv1pmMk3dxxwpEfr";
+Parse.initialize(PARSE_APPLICATION_ID, PARSE_JAVASCRIPT_KEY);
+Parse.serverURL = PARSE_HOST_URL;
 
 const App = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [status, setStatus] = useState("");
-  const [hasError, setHasError] = useState("");
-
-  sentDataFx.fail.watch(() => {
-    alert("Что-то пошло не так, попробуйте еще раз");
-  });
-
-  sentDataFx.done.watch(() => {
-    setHasError("Ваш ответ успешно получен!");
-  });
 
   useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
 
-  useEffect(() => {
-    if (hasError !== "") alert(hasError);
-  }, [hasError]);
+  async function addGuest() {
+    try {
+      // create a new Parse Object instance
+      const Guest = new Parse.Object("Guest");
+      // define the attributes you want for your Object
+      Guest.set("firstName", firstName);
+      Guest.set("lastName", lastName);
+      Guest.set("status", status);
+      // save it on Back4App Data Store
+      await Guest.save();
+      alert("Ваш ответ успешно принят!");
+    } catch (error) {
+      console.log("Что-то пошло не так, попробуйте еще раз: ", error);
+    }
+  }
 
-  const sentData = (firstName: string, lastName: string, status: string) => {
+  const sentData = () => {
     setFirstName("");
     setLastName("");
     setStatus("");
-    sentDataFx({ firstName, lastName, status });
+    addGuest();
   };
 
   const changeFirstName = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -238,7 +249,7 @@ const App = () => {
           <button
             data-aos="fade-up"
             className="confirmBtn"
-            onClick={() => sentData(firstName, lastName, status)}
+            onClick={() => sentData()}
             disabled={!firstName || !lastName || !status}
           >
             Отправить
