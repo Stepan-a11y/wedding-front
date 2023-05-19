@@ -2,7 +2,6 @@ import "./App.css";
 import { Carousel } from "./carousel/Carousel";
 
 import ringImg from "./assets/Rectangle_67_1.png";
-import banketImg from "./assets/Rectangle_68_1.png";
 import smallHeart from "./assets/smallHeartsvg.svg";
 import threeHearts from "./assets/threeHearts.svg";
 import finalPicture from "./assets/finalPicture.png";
