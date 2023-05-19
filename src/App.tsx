@@ -132,7 +132,7 @@ const App = () => {
             </div>
             <div className="row">
               <div className="elem">Адрес</div>
-              <div className="elem">ул. Вильчковского, 127</div>
+              <div className="elem">г. Барановичи, ул. Вильчковского, 127</div>
             </div>
           </div>
         </div>
