@@ -112,7 +112,7 @@ const App = () => {
           <div data-aos="fade-up" className="textBlock">
             <div className="row">
               <div className="elem">Дата</div>
-              <div className="elem">23 июля 2023 года</div>
+              <div className="elem">22 июля 2023 года</div>
             </div>
             <div className="row">
               <div className="elem">Сбор гостей</div>
