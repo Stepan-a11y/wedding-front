@@ -6,21 +6,11 @@ import rightArrow from "../assets/rightArrow.svg";
 import leftArrow from "../assets/leftArrow.svg";
 
 const img = [
-  <div id="1" className="slide">
-    1
-  </div>,
-  <div id="2" className="slide">
-    2
-  </div>,
-  <div id="3" className="slide">
-    3
-  </div>,
-  <div id="4" className="slide">
-    4
-  </div>,
-  <div id="5" className="slide">
-    5
-  </div>,
+  <div id="2" className={`${"slide"} ${"one"}`}></div>,
+  <div id="2" className={`${"slide"} ${"two"}`}></div>,
+  <div id="3" className={`${"slide"} ${"three"}`}></div>,
+  <div id="4" className={`${"slide"} ${"four"}`}></div>,
+  <div id="5" className={`${"slide"} ${"five"}`}></div>,
 ];
 
 export const Carousel = () => {

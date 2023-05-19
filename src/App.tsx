@@ -112,38 +112,20 @@ const App = () => {
           </div>
           <div data-aos="fade-up" className="textBlock">
             <div className="row">
-              <span className="rowTitle">РЕГИСТРАЦИЯ</span>
-            </div>
-            <div className="row">
               <div className="elem">Дата</div>
               <div className="elem">23 июля 2023 года</div>
             </div>
             <div className="row">
-              <div className="elem">Время</div>
-              <div className="elem">16:30 - 17:00</div>
+              <div className="elem">Сбор гостей</div>
+              <div className="elem">15:00 - 15:30</div>
             </div>
             <div className="row">
-              <div className="elem">Место проведения</div>
-              <div className="elem">дворик у кафе "Латте"</div>
+              <div className="elem">Регистрация</div>
+              <div className="elem">16:00 - 16:30</div>
             </div>
             <div className="row">
-              <div className="elem">Адрес</div>
-              <div className="elem">Вильчковского 127</div>
-            </div>
-          </div>
-        </div>
-        <div data-aos="fade-up" className="secondBlock">
-          <div data-aos="fade-up" className="secondTextBlock">
-            <div className="row">
-              <span className="rowTitle">БАНКЕТ</span>
-            </div>
-            <div className="row">
-              <div className="elem">Дата</div>
-              <div className="elem">23 июля 2023 года</div>
-            </div>
-            <div className="row">
-              <div className="elem">Время</div>
-              <div className="elem">17:00 - 23:00</div>
+              <div className="elem">Банкет</div>
+              <div className="elem">17:00</div>
             </div>
             <div className="row">
               <div className="elem">Место проведения</div>
@@ -151,11 +133,8 @@ const App = () => {
             </div>
             <div className="row">
               <div className="elem">Адрес</div>
-              <div className="elem">Вильчковского 127</div>
+              <div className="elem">ул. Вильчковского, 127</div>
             </div>
-          </div>
-          <div className="imgBlockSecond">
-            <img src={banketImg} className="imgSec" />
           </div>
         </div>
       </div>
@@ -169,12 +148,13 @@ const App = () => {
         <p data-aos="fade-up" className="wishText">
           Если вы захотите подарить нам букет, то предлагаем не мучить цветы
           долгой дорогой и заменить их интересной книгой, настольной игрой или
-          чем-то, что сможет напомнить нам о вас, людях которые разделили с нами
-          этот праздник.
+          чем-то, что сможет напомнить нам о ваc.
         </p>
         <p data-aos="fade-up" className="wishText">
-          А также, дорогие девушки, помните пожалуйста о том, что белый цвет -
-          это цвет невесты.
+          Наши прекрасные девушки!
+          <br /> Хотим напомнить вам, что белый - это цвет невесты. Мы не
+          придерживаемся какой-то определенной цветовой гаммы, поэтому вы можете
+          выбрать любой другой цвет для вашего образа.
         </p>
       </div>
       <div data-aos="fade-up" className="confirmBlock">
@@ -183,7 +163,7 @@ const App = () => {
             <span className="confirmTitle">ПОДТВЕРЖДЕНИЕ</span>
             <p className="confirmText">
               Пожалуйста, обратите внимание, что каждый гость заполняется
-              отдельно, а также просим вас дать окончательный ответ до 22 июня
+              отдельно, а также просим вас дать окончательный ответ до 1 июля
               2023 года.
             </p>
           </div>

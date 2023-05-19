@@ -159,13 +159,13 @@
     flex-direction: column;
     flex-wrap: wrap;
     margin-top: 60px;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
 }
 
 .firstBlock {
     display: flex;
     gap: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 .imgFirst {
@@ -175,15 +175,7 @@
 .imgBlock {
    background: url('./assets/weddingBack.svg');
    background-repeat: no-repeat; 
-   background-position: bottom center;
-   background-size: 90% auto;
-   padding-bottom: 56px;
-}
-
-.imgBlockSecond {
-   background: url('./assets/banquetBack.svg');
-   background-repeat: no-repeat; 
-   background-position: 50% 97%;
+   background-position: 50% 80%;
    background-size: 90% auto;
 }
 
@@ -260,7 +252,7 @@
 .confirmBlock {
     width: 100%;
     padding-top: 100px;
-    padding-bottom: 300px;
+    padding-bottom: 200px;
     display: flex;
     justify-content: center;
     background: url('./assets/enter.svg');
@@ -571,7 +563,8 @@
     }
 
     .imgBlock {
-        background-size: 90% auto;
+        background-position: 50% 100%;
+        background-size: 100% auto;
         padding-bottom: 36px;
      }
 
@@ -833,8 +826,9 @@
     }
 
     .imgBlock {
+        background-position: 50% 100%;
         background-size: 90% auto;
-        padding-bottom: 52px;
+        padding-bottom: 58px;
      }
 
      .imgBlockSecond {

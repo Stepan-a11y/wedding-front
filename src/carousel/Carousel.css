@@ -1,7 +1,7 @@
 .slider {
     position: relative;
     width: 90%;
-    height: 400px;
+    height: 480px;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -52,14 +52,37 @@
 .slide {
     height: 100%;
     width: 90%;
-    background-color: brown;
+    background-color: rgba(219, 175, 150, 0.18);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+.five {
+    background-image: url('../assets/paparac.jpg');   
+}
+
+.three {
+    background-image: url('../assets/withRing.jpg');
+}
+
+.one {
+    background-image: url('../assets/cafe.jpg');
+}
+
+.two {
+    background-image: url('../assets/withBaloo.jpg');
+}
+
+.four {
+    background-image: url('../assets/plecho.jpg');
 }
 
 @media (min-device-width: 0px) and (max-device-width: 568px) { 
     .slider {
         position: relative;
         width: 100%;
-        height: 300px;
+        height: 240px;
         box-sizing: border-box;
         display: flex;
         overflow: hidden;
@@ -75,6 +98,9 @@
     .slide {
         height: 100%;
         width: 100%;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: 100%;
     }
 
     .buttonsContainer {
@@ -104,6 +130,9 @@
     .slide {
         height: 100%;
         width: 100%;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: 100%;
     }
 
     .buttonsContainer {
